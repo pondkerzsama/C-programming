@@ -16,19 +16,19 @@ void check(char word[]){
             else
             {
                 i++;
-                for(i;;i++)
+                for(i;word[i] == ' ';i++)
                 {
                     if((word[i] != ' ') && (word[i] != '\n') && (word[i] != '\0')) 
                     {
-                        word_count++;
                         break;
                     }
+                    word_count++;
                 }
                 printf(" (%d)\n",count);
                 break;
             }   
         }
-        if (word[i] == '\n')
+        if (word[i] == '\0')
         {
             if (count > 0) 
             {
