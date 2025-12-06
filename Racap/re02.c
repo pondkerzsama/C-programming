@@ -17,6 +17,7 @@ Spaces: 2
 Words: 3
 Letters: dehllloorw         ใช้ sort, frequency of letter
 
+Ex. input : world wide  web\0
 */
 
 // !! เจอปัญหาคือ ทำเงื่อนไขนับ words ผิด เด๋วมาแก้
@@ -29,6 +30,10 @@ void check(char word[])
     int total_char = 0, alpha = 0, digit = 0, space = 0, words = 0 ;
     int letters[26] = {0};
 
+    if (word[0] != ' ' && word[0] != '\n' && word[0] != '\0') 
+    {
+        words++;
+    }
 
     while(word[i] != '\0')
     {
@@ -61,7 +66,7 @@ void check(char word[])
                 if ((word[i+1] != ' ') && (word[i+1] != '\0') && (word[i+1] != '\n') )
                 {
                     words++;
-                }
+                }  
                 
             }
         
