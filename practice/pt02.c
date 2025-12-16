@@ -20,7 +20,7 @@ while w != '\n'
 problem
 1 miss about printing number that when meet number must print all of them don't count them
 2 go wrong on condition in line 39 "if ((w[i+1] < 0) && (w[i+1] > 9))"
-3 case number 999
+3 case number 999 (not fix yet)
 */
 #include <stdio.h>
 
